@@ -1,118 +1,14 @@
-
-<!DOCTYPE html>
-<html style="margin-top:0 !important;">
-	<head><script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=false;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function e(e,i,n,r,s,o,a,l){var u=new f.file(e,i,n,r,s,o,a);l===!0?d[e]=u:h[e]=u,c[e]=u,t(u)}function i(e,i,n,r,s,o,a,u){s===!0&&(e=e+"_"+l++);var p=new f.func(e,i,n,r,o,a);u===!0?d[e]=p:h[e]=p,c[e]=p,t(p)}function t(e){n(e)!==!0&&e.process()}function n(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var t=e.blockedBy[i];if(c.hasOwnProperty(t)===!1)return r(e.name+" blocked = "+t),!0;if(e.proceedIfError===!0&&c[t].isError===!0)return!1;if(c[t].isComplete===!1)return r(e.name+" blocked = "+t),!0}return!1}function r(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i"),n=t.exec(i),r=n?n[1]:null;"1"===r&&console.debug(e)}function s(){a++,a>10||(r("let's go"),o(d),o(h))}function o(e){for(var i in e)if(e.hasOwnProperty(i)!==!1){var t=e[i];t.isComplete===!0||n(t)||t.isInitialized===!0||t.isError===!0?t.isError===!0?r(t.name+": error"):t.isComplete===!0?r(t.name+": complete already"):t.isInitialized===!0&&r(t.name+": initialized already"):t.process()}}var a=0,l=0,c=[],d=[],h=[],f={func:function(e,i,t,n,s,o){var a=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=!1,this.blockedBy=n,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=o,this.process=function(){r("... func = "+e),a.isInitialized=!0,a.isComplete=!0;var i=a.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[a.funcName].apply(null,this.parameters)),this.deleteWhenComplete===!0&&delete c[e]}},file:function(e,i,t,n,o,a,l){var c=this;this.name=e,this.path=i,this.async=o,this.defer=a,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=l,this.process=function(){c.isInitialized=!0,r("... file = "+e);var t=document.createElement("script");t.src=i,o===!0?t.async=!0:a===!0&&(t.defer=!0),t.onerror=function(){r("----- ERR'D: "+c.name),c.isError=!0,c.isBlock===!0&&s()},t.onreadystatechange=t.onload=function(){var e=t.readyState;r("----- F'D: "+c.name),(!e||/loaded|complete/.test(e))&&(c.isComplete=!0,c.isBlock===!0&&s())},document.getElementsByTagName("head")[0].appendChild(t)}}};return{addFile:e,addFunc:i,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:__ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
-<script type="text/javascript">
-	var __banger_pmp_deals=[];
-</script>
-<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
-function ez_isclean( data ) {
-    if (typeof data === 'undefined') { data = document.URL; }
-    var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
-    var isClean = !re.test(data);
-    return isClean;
-}
-
-var ez_queue = new Array();
-function sort_queue(a, b)
-{
-  if( a.priority < b.priority ) return -1;
-  else if( a.priority == b.priority ) return 0;
-  else return 1;
-}
-function execute_ez_queue()
-{
-  ez_queue.sort( sort_queue );
-
-  for( var i in ez_queue )
-  {
-        if(typeof ez_queue[i].method != "undefined")
-        {
-            try{
-                ez_queue[i].method.call( null );
-            }
-            catch (err) {
-
-            }
-        }
-  }
-}
-
-window.ez_ad_units = new Array();
-window.ezslots = new Array();
-function ez_write_tag(d) {
-    if(ez_isclean() && d instanceof Array) {
-
-		ez_ad_units[ez_ad_units.length] = d;
-        var ezcmd = "googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-0';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";
-		return ezcmd;
-    }
-    else {
-        return "1+1";
-    }
-}
-function in_array(needle, haystack) {
-    var length = haystack.length;
-    for(var i = 0; i < length; i++) {
-        if(haystack[i] == needle) return true;
-    }
-    return false;
-}
-</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>var ezrpos = new Array();var ez_current_interval;var ez_current_load = 0;</script>
-<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer src="//go.ezoic.net/porpoiseant/dall.js" async></script>
-<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>
-function epbjsRefreshSlot(e){epbjs.que.push(function(){epbjs.requestBids({adUnitCodes:[e.getSlotElementId()],bidsBackHandler:function(){epbjs.setTargetingForGPTAsync([e.getSlotElementId()])}})})}var epbjs=epbjs||{};epbjs.bidderTimeout=2500,epbjs.useAdj=true,epbjs.que=epbjs.que||[],epbjs.ezdss=epbjs.ezdss||[],epbjs.ezobid=epbjs.ezobid||[],epbjs.que.push(function(){var e=[];epbjs.addAdUnits(e);epbjs.SS={"pulsepoint":10019,"sonobi":10048},epbjs.bidderSettings={pulsepoint: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.500000; return adj2; }},sonobi: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.500000; return adj2; }},standard:{adserverTargeting:[{key:"hb_bidder",val:function(e){return e.bidderCode}},{key:"hb_adid",val:function(e){return e.adId}},{key:"hb_pb",val:function(e){var s=e.cpm;return 5>s?(Math.floor(100*s)/100).toFixed(2):(Math.floor(10*s)/10).toFixed(2)}},{key:"hb_ssid",val:function(e){return"ehb"==e.bidder?0:"undefined"!=typeof epbjs.SS[e.bidder]?epbjs.SS[e.bidder]:(console.error("epbjs: NO MATCH"),0)}}]}},epbjs.onEvent("bidWon",function(e){"ehb"==e.bidder?epbjs.ezdss[e.adUnitCode]=e.ss:"undefined"!=typeof epbjs.SS[e.bidder]?(epbjs.ezdss[e.adUnitCode]=epbjs.SS[e.bidder],1==epbjs.useAdj&&["sovrn","openx","pulsepoint","defymedia","aol","conversant","districtm","admedia","brealtime","sonobi","criteo"].indexOf(e.bidder)>-1&&(epbjs.ezobid[e.adUnitCode]=e.cpm/1.500000)):console.error("epbjs: NO MATCH")}),epbjs.requestBids({bidsBackHandler:function(e){epbjs.setTargetingForGPTAsync()}})});
-</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
-window.googletag = window.googletag || {};
-googletag.cmd = googletag.cmd || [];
-(function() {
-var gads = document.createElement('script');
-gads.async = true;
-gads.type = 'text/javascript';
-var useSSL = 'https:' == document.location.protocol;
-gads.src = (useSSL ? 'https:' : 'http:') +
-'//www.googletagservices.com/tag/js/gpt.js';
-var node = document.getElementsByTagName('script')[0];
-node.parentNode.insertBefore(gads, node);
-})();
+<html style="margin-top: 0px !important;" data-minimalscrollbar="yes"><style>html::-webkit-scrollbar{display:none !important}body::-webkit-scrollbar{display:none !important}</style><head>
 
 
 
-</script>
-<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
-googletag.cmd.push(function() {if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {}else{window.ezHideLocations=[];}googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotVisibilityChanged', function(event) { __ez.queue.addFunc("ezvbc", "ezvbc", event, ['banger.js'], true, true, false, true); });googletag.enableServices();});if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {}else{}</script>
-<script type="text/javascript" data-cfasync="false">var _ezaq = {"ad_location_ids":"","adx_ad_count":0,"bidder_version":2,"country":"FR","days_since_last_visit":-1,"domain_id":40068,"ds_adsize_opt_id":-1,"engaged_time_visit":113,"forensiq_score":-1,"form_factor_id":1,"has_bad_words":0,"is_return_visitor":false,"last_page_load":"1492232317016","max_ads":3,"page_ad_positions":"","page_view_count":4,"page_view_id":"7dae9c84-ad71-46cf-7739-f53ded089eef","pv_event_count":0,"response_time_orig":322,"serverid":"34.253.77.108:5543","sub_page_ad_positions":"","t_epoch":1492232321,"template_id":147,"time_on_site_visit":283,"url":"http://yt2fb.com/rhodes-deep-arp-island-album-released/","user_id":371320706,"word_count":173};var _ezim_d = {};var _ezat = {"domain_id":40068,"form_factor_id":1,"pageview_date":"2017-04-14","pageview_id":"7dae9c84-ad71-46cf-7739-f53ded089eef","template_id":147,"url":"http://yt2fb.com/rhodes-deep-arp-island-album-released/","visit_uuid":"0c43aeb9-27e3-45ae-4789-52a111d18014"};</script><script data-cfasync='false' type="text/javascript" src="/detroitchicago/rochester.js?cb=156-0&v=7" async></script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=156-0&bv=2&v=4&PageSpeed=off', true, [], true, false, false, true);</script><script data-pagespeed-no-defer data-cfasync='false'>
-function create_ezolpl() {
-    var d = new Date();
-    d.setTime(d.getTime() + (365*24*60*60*1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = "ezux_lpl_40068=" + Date.now() + "; " + expires;
-}
-function attach_ezolpl() {
-    if(window.attachEvent) {
-        window.attachEvent('onload', create_ezolpl);
-    } else {
-        if(window.onload) {
-            var curronload = window.onload;
-            var newonload = function(evt) {
-                curronload(evt);
-                create_ezolpl();
-            };
-            window.onload = newonload;
-        } else {
-            window.onload = create_ezolpl;
-        }
-    }
-}
-attach_ezolpl();
-</script>
-		<link rel='dns-prefetch' href='//a.optnmnstr.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="YouTube to Facebook &raquo; https://www.youtube.com/watch?v=cQk5yw93XPY Comments Feed" href="http://yt2fb.com/rhodes-deep-arp-island-album-released/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/yt2fb.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
+
+
+
+		<link rel="dns-prefetch" href="//a.optnmnstr.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="YouTube to Facebook » https://www.youtube.com/watch?v=cQk5yw93XPY Comments Feed" href="http://yt2fb.com/rhodes-deep-arp-island-album-released/feed/">
+		
 		<style type="text/css">
 img.wp-smiley,
 img.emoji {
@@ -127,19 +23,22 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='style-css'  href='http://19rra12pc32y3gvmfh3apf04.wpengine.netdna-cdn.com/wp-content/themes/yt2fb/style.css?ver=2999' type='text/css' media='all' />
-<script type='text/javascript' src='http://19rra12pc32y3gvmfh3apf04.wpengine.netdna-cdn.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='http://19rra12pc32y3gvmfh3apf04.wpengine.netdna-cdn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='http://19rra12pc32y3gvmfh3apf04.wpengine.netdna-cdn.com/wp-content/themes/yt2fb/main.js?ver=222222222z'></script>
-<script type='text/javascript' data-cfasync="false" id="omapi-script" async="async" src='//a.optnmnstr.com/app/js/api.min.js?ver=1.1.6.1'></script>
-<link rel='https://api.w.org/' href='http://yt2fb.com/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://yt2fb.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://yt2fb.com/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='How To Make Rice Papad' href='http://yt2fb.com/how-to-make-rice-papad/' />
-<link rel="canonical" href="http://yt2fb.com/rhodes-deep-arp-island-album-released/" />
-<link rel='shortlink' href='http://yt2fb.com/?p=1869420' />
-<link rel="alternate" type="application/json+oembed" href="http://yt2fb.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fyt2fb.com%2Frhodes-deep-arp-island-album-released%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://yt2fb.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fyt2fb.com%2Frhodes-deep-arp-island-album-released%2F&#038;format=xml" />
+<link rel="stylesheet" id="style-css" href="http://19rra12pc32y3gvmfh3apf04.wpengine.netdna-cdn.com/wp-content/themes/yt2fb/style.css?ver=2999" type="text/css" media="all">
+<style type="text/css">
+:root .login4pro,
+:root #social_button
+{ display: none !important; }</style>
+
+
+
+<link rel="https://api.w.org/" href="http://yt2fb.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://yt2fb.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://yt2fb.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="How To Make Rice Papad" href="http://yt2fb.com/how-to-make-rice-papad/">
+<link rel="canonical" href="http://yt2fb.com/rhodes-deep-arp-island-album-released/">
+<link rel="shortlink" href="http://yt2fb.com/?p=1869420">
+<link rel="alternate" type="application/json+oembed" href="http://yt2fb.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fyt2fb.com%2Frhodes-deep-arp-island-album-released%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://yt2fb.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fyt2fb.com%2Frhodes-deep-arp-island-album-released%2F&amp;format=xml">
 
 <!-- This site is using AdRotate v4.0 to display their advertisements - https://ajdg.solutions/products/adrotate-for-wordpress/ -->
 <!-- AdRotate CSS -->
@@ -157,19 +56,11 @@ img.emoji {
 
 
 <!-- BEGIN GADWP v4.9.6.2 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-72920642-1', 'auto');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-</script>
+
 
 <!-- END GADWP Universal Tracking -->
 
-		<title>Click to Watch > Rhodes Deep - Arp Island (ALBUM RELEASED) in HD</title><meta name="description" content="Magic arp circle invades at 00:18
+		<title>Click to Watch &gt; Rhodes Deep - Arp Island (ALBUM RELEASED) in HD</title><meta name="description" content="Magic arp circle invades at 00:18
 
 Buy on Bandcamp: https://ronaldjenkees.bandcamp.com/album/rhodes-deep
 Buy on iTunes https://t.co/R7CgGI3DQR
@@ -177,7 +68,7 @@ Buy on Google Play: https://t.co/YixifnAA35
 Spotify: https://open.spotify.com/album/0qLVfJwYqifHy0hXVR4NiU
 
 Pre-Order CDs: https://www.ronaldjenkees.com/cd-store
-*This album will come in a matte finish like DF. Im excited to see it. BTW, I still sign them as usual. The album has been delivered everywhere and will show up pretty soon wherever you listen to your music. THANKS, millions of thanks for listening to my music and getting me to RJCD5. The fun never stops."/>
+*This album will come in a matte finish like DF. Im excited to see it. BTW, I still sign them as usual. The album has been delivered everywhere and will show up pretty soon wherever you listen to your music. THANKS, millions of thanks for listening to my music and getting me to RJCD5. The fun never stops.">
 				<meta itemprop="name" content="Rhodes Deep - Arp Island (ALBUM RELEASED)">
 				<meta itemprop="description" content="Magic arp circle invades at 00:18
 
@@ -191,7 +82,7 @@ Pre-Order CDs: https://www.ronaldjenkees.com/cd-store
 				<meta itemprop="image" content="">
 
 				
-				<meta property="og:title" content="Rhodes Deep - Arp Island (ALBUM RELEASED)"/>
+				<meta property="og:title" content="Rhodes Deep - Arp Island (ALBUM RELEASED)">
 				<meta property="og:description" content="Magic arp circle invades at 00:18
 
 Buy on Bandcamp: https://ronaldjenkees.bandcamp.com/album/rhodes-deep
@@ -200,92 +91,44 @@ Buy on Google Play: https://t.co/YixifnAA35
 Spotify: https://open.spotify.com/album/0qLVfJwYqifHy0hXVR4NiU
 
 Pre-Order CDs: https://www.ronaldjenkees.com/cd-store
-*This album will come in a matte finish like DF. Im excited to see it. BTW, I still sign them as usual. The album has been delivered everywhere and will show up pretty soon wherever you listen to your music. THANKS, millions of thanks for listening to my music and getting me to RJCD5. The fun never stops."/>
-				<meta property="og:image" content=""/> 
-				<meta property="og:image:url" content=""/> 
-				<meta property="og:image:width" content="470"/>
-				<meta property="og:image:height" content="265"/>
-				<meta property="og:site_name" content="Youtube / Facebook Connection"/> 
+*This album will come in a matte finish like DF. Im excited to see it. BTW, I still sign them as usual. The album has been delivered everywhere and will show up pretty soon wherever you listen to your music. THANKS, millions of thanks for listening to my music and getting me to RJCD5. The fun never stops.">
+				<meta property="og:image" content=""> 
+				<meta property="og:image:url" content=""> 
+				<meta property="og:image:width" content="470">
+				<meta property="og:image:height" content="265">
+				<meta property="og:site_name" content="Youtube / Facebook Connection"> 
 
 					
-				<meta property='og:video' content='http://www.youtube.com/v/cQk5yw93XPY?version=3'/>
-				<meta property='og:video:height' content='360'/>
-				<meta property='og:video:type' content='application/x-shockwave-flash'/>
-				<meta property='og:video:width' content='640'/>
-				<meta property='og:type' content='video'/>
+				<meta property="og:video" content="http://www.youtube.com/v/cQk5yw93XPY?version=3">
+				<meta property="og:video:height" content="360">
+				<meta property="og:video:type" content="application/x-shockwave-flash">
+				<meta property="og:video:width" content="640">
+				<meta property="og:type" content="video">
 
 			
-				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:site" content="@yt2fb" />
-				<meta name="twitter:title" content="Rhodes Deep - Arp Island (ALBUM RELEASED)" />
-				<meta name="twitter:description" content="Created with YT2FB.COM, Make your YouTube videos look amazing on Facebook & Twitter. Visit http://YT2FB.com" />
-				<meta name="twitter:image" content="" />
+				<meta name="twitter:card" content="summary_large_image">
+				<meta name="twitter:site" content="@yt2fb">
+				<meta name="twitter:title" content="Rhodes Deep - Arp Island (ALBUM RELEASED)">
+				<meta name="twitter:description" content="Created with YT2FB.COM, Make your YouTube videos look amazing on Facebook &amp; Twitter. Visit http://YT2FB.com">
+				<meta name="twitter:image" content="">
 				
 
 					<meta name="viewport" content="width=320, initial-scale=1">
-		<meta name="msvalidate.01" content="B4084540C5D02609611CC859DC7090A0" />				
+		<meta name="msvalidate.01" content="B4084540C5D02609611CC859DC7090A0">				
 	<style>.ezoic-ad{display:inline-block;}
 .ezoic-floating-bottom { display: none!important; }</style>
-<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-90476801-36";</script>
-<script data-cfasync="false" type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['e._setAccount', 'UA-90476801-36']);
-_gaq.push(['f._setAccount', 'UA-38339005-1']);
-_gaq.push(['e._setDomainName', 'yt2fb.com']);
-_gaq.push(['f._setDomainName', 'yt2fb.com']);
-_gaq.push(['e._setCustomVar',1,'template','pub_site_noads',3]);
-_gaq.push(['e._setCustomVar',2,'t','147',3]);
-_gaq.push(['e._setCustomVar',3,'rid','0',2]);
-_gaq.push(['e._setCustomVar',4,'bra','mod15',3]);
-_gaq.push(['e._setAllowAnchor',true]);
-_gaq.push(['e._setSiteSpeedSampleRate', 10]);
-_gaq.push(['f._setCustomVar',1,'template','pub_site_noads',3]);
-_gaq.push(['f._setCustomVar',2,'domain','yt2fb.com',3]);
-_gaq.push(['f._setSiteSpeedSampleRate', 20]);
-_gaq.push(['e._trackPageview']);
-_gaq.push(['f._trackPageview']);
 
 
-(function() {
- var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
- ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
-<script type="text/javascript">var ezouid = "371320706";</script><base href="http://yt2fb.com/rhodes-deep-arp-island-album-released/"><script type='text/javascript'>
-var ezoTemplate = 'pub_site_noads';
-if(typeof ezouid == 'undefined')
-{
-    var ezouid = 'none';
-}
-var ezoFormfactor = '1';
-var ezo_elements_to_check = Array();
-</script><!-- START EZHEAD -->
-<script type='text/javascript'>
-var soc_app_id = '0';
-var did = 40068;
-var ezdomain = 'yt2fb.com';
-var ezoicSearchable = 1;
-</script>
+<base href="http://yt2fb.com/rhodes-deep-arp-island-album-released/"><!-- START EZHEAD -->
+
 <!--{jquery}-->
 <!-- END EZHEAD -->
-<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript">
-        window.cookieconsent_options = {
-            "message":"We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners.",
-            "dismiss":"Got it!",
-            "learnMore":"See details",
-            "link":'/privacy.html',
-            "theme":"/ezoic/styles/dark-bottom.css",
-			"domain":"yt2fb.com"
-        };
-    </script>
-<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript" src="/ezoic/cookieconsent.min.js"></script>
-<script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>
-__ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js', true, [], true, false, false, false);
-var __ez_ezosuigenerisEvt = function() { __ez.bit.AddAndFire(_ezaq['page_view_id'], [(new __ezDotData('universal_user_id', ezosuigeneris))]); };
-__ez.queue.addFunc('__ez_ezosuigenerisEvt', '__ez_ezosuigenerisEvt', null, ['__ezf_ezosuigeneris'], false, false, false, false);</script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?nogen=1', true, [], true, false, false, false);</script></head>
 
-	<body class="post-template-default single single-post postid-1869420 single-format-standard">
+
+<link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAADAFBMVEUAAACpCI4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlO2zmAAABAHRSTlMA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgXLUgAAARtJREFUeNoBEAHv/gABAQEBAQEBAQEBAQEBAQEBAAEBAQEBAQEBAQEBAQEBAQEAAAABAQAAAQEBAQAAAQEAAAAAAAEBAAABAQEBAAABAQAAAAEBAAAAAAAAAAAAAAAAAQEAAQEAAAAAAAAAAAAAAAABAQABAQAAAQEBAQEBAQEAAAEBAAEBAAABAQEBAQEBAQAAAQEAAQEAAAEBAQEBAQEBAAABAQABAQAAAQEBAQEBAQEAAAEBAAEBAQEAAAEBAQEAAAEBAQEAAQEBAQAAAQEBAQAAAQEBAQABAQEBAQEBAQEBAQEBAQEBAAEBAQEBAQEBAQEBAQEBAQEAAQEAAAEBAAAAAAEBAAABAQABAQAAAQEAAAAAAQEAAAEBXYAAsSiDYgQAAAAASUVORK5CYII="><style type="text/css">
+:root *[vo6u1pi][hidden] { display: none !important; }</style></head>
+
+	<body class="post-template-default single single-post postid-1869420 single-format-standard" style="">
 	<div id="page" class="site">
 
 <style type="text/css">
@@ -443,7 +286,7 @@ __ez.queue.addFunc('__ez_ezosuigenerisEvt', '__ez_ezosuigenerisEvt', null, ['__e
 
 	<div class="page_padding">
 		<div class="inner">
-			<div id="show_video" rel=""><div class="video  " rel="cQk5yw93XPY" name=""><h1>Click to Watch in HD > Rhodes Deep - Arp Island (ALBUM RELEASED)</h1> <div id="video"></div><img src="https://i.ytimg.com/vi/cQk5yw93XPY/maxresdefault.jpg"/><h2>Watch Magic arp circle invades at 00:18
+			<div id="show_video" rel=""><div class="video  " rel="cQk5yw93XPY" name=""><h1>Click to Watch in HD &gt; Rhodes Deep - Arp Island (ALBUM RELEASED)</h1> <iframe id="video" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="390" src="https://www.youtube.com/embed/cQk5yw93XPY?enablejsapi=1&amp;origin=http%3A%2F%2Fyt2fb.com&amp;widgetid=1" style="max-height: 894px; height: 1080px;"></iframe><h2>Watch Magic arp circle invades at 00:18
 
 Buy on Bandcamp: https://ronaldjenkees.bandcamp.com/album/rhodes-deep
 Buy on iTunes https://t.co/R7CgGI3DQR
@@ -456,11 +299,9 @@ Pre-Order CDs: https://www.ronaldjenkees.com/cd-store
 The album has been delivered everywhere and will show up pretty soon wherever you listen to your music. 
 
 THANKS, millions of thanks for listening to my music and getting me to RJCD5. The fun never stops.</h2></div><a href="https://www.youtube.com/channel/UCvKLrpen70sLbTe8sg5TWtQ">Youtube Channel / ronaldjenkees</a>	
-		<div id="social_button">
+		<div id="social_button" vo6u1pi="" hidden="">
 
-		<a class="social icon-twitter" rel="nofollow"
-		    href="http://twitter.com/"
-		    onclick="popUp=window.open(
+		<a class="social icon-twitter" rel="nofollow" href="http://twitter.com/" onclick="popUp=window.open(
 		        'http://twitter.com/intent/tweet?text=Rhodes Deep - Arp Island (ALBUM RELEASED) via @jailbreakmatrix - [http://yt2fb.com/rhodes-deep-arp-island-album-released/]',
 		        'popupwindow',
 		        'scrollbars=yes,width=800,height=400');
@@ -469,9 +310,7 @@ THANKS, millions of thanks for listening to my music and getting me to RJCD5. Th
 		    <i class="visuallyhidden">share on twitter</i>
 		</a>
 
-		<a class="social icon-facebook" rel="nofollow"
-		    href="http://www.facebook.com/"
-		    onclick="popUp=window.open(
+		<a class="social icon-facebook" rel="nofollow" href="http://www.facebook.com/" onclick="popUp=window.open(
 		        'http://www.facebook.com/sharer.php?u=http://yt2fb.com/rhodes-deep-arp-island-album-released/',
 		        'popupwindow',
 		        'scrollbars=yes,width=800,height=400');
@@ -480,9 +319,7 @@ THANKS, millions of thanks for listening to my music and getting me to RJCD5. Th
 		    <i class="visuallyhidden">share on facebook</i>
 		</a>
 
-		<a class="social icon-gplus" rel="nofollow"
-		    href="http://www.plus.google.com/"
-		    onclick="popUp=window.open(
+		<a class="social icon-gplus" rel="nofollow" href="http://www.plus.google.com/" onclick="popUp=window.open(
 		        'https://plus.google.com/share?url=http://yt2fb.com/rhodes-deep-arp-island-album-released/',
 		        'popupwindow',
 		        'scrollbars=yes,width=800,height=400');
@@ -491,9 +328,7 @@ THANKS, millions of thanks for listening to my music and getting me to RJCD5. Th
 		    <i class="visuallyhidden">share on google plus</i>
 		</a>
 
-		<a class="social icon-linkedin" rel="nofollow"
-		    href="http://www.linkedin.com/"
-		    onclick="popUp=window.open(
+		<a class="social icon-linkedin" rel="nofollow" href="http://www.linkedin.com/" onclick="popUp=window.open(
 		        'http://www.linkedin.com/shareArticle?url=http://yt2fb.com/rhodes-deep-arp-island-album-released/',
 		        'popupwindow',
 		        'scrollbars=yes,width=800,height=400');
@@ -502,9 +337,7 @@ THANKS, millions of thanks for listening to my music and getting me to RJCD5. Th
 		    <i class="visuallyhidden">share on linkedin</i>
 		</a>
 
-		<a class="social icon-stumbleupon" rel="nofollow"
-		    href="http://www.stumbleupon.com/"
-		    onclick="popUp=window.open(
+		<a class="social icon-stumbleupon" rel="nofollow" href="http://www.stumbleupon.com/" onclick="popUp=window.open(
 		        'http://www.stumbleupon.com/submit?url=http://yt2fb.com/rhodes-deep-arp-island-album-released/',
 		        'popupwindow',
 		        'scrollbars=yes,width=800,height=400');
@@ -513,9 +346,7 @@ THANKS, millions of thanks for listening to my music and getting me to RJCD5. Th
 		    <i class="visuallyhidden">share on stumbleupon</i>
 		</a>
 
-		<a class="social icon-pinterest" rel="nofollow"
-		    href="http://www.pinterest.com/"
-		    onclick="popUp=window.open(
+		<a class="social icon-pinterest" rel="nofollow" href="http://www.pinterest.com/" onclick="popUp=window.open(
 		        'http://pinterest.com/pin/create/button/?url=http://yt2fb.com/rhodes-deep-arp-island-album-released/',
 		        'popupwindow',
 		        'scrollbars=yes,width=800,height=400');
@@ -526,42 +357,24 @@ THANKS, millions of thanks for listening to my music and getting me to RJCD5. Th
 		</div>
 
 
-	<div class="related"><div class="rel_title">Related Videos</div><div class="rel_video next_video" rel="ktUCyezuZF0"><img src="https://i.ytimg.com/vi/ktUCyezuZF0/mqdefault.jpg"><div class="title">New Album: Rhodes Deep (Bandcamp Pre-Order)</div></div><div class="rel_video " rel="2m8s18LrJxk"><img src="https://i.ytimg.com/vi/2m8s18LrJxk/mqdefault.jpg"><div class="title">Ronald Jenkees - Try The Bass (Live Jam & New Single for RJCD5)</div></div><div class="rel_video " rel="WGoPPdR_oXc"><img src="https://i.ytimg.com/vi/WGoPPdR_oXc/mqdefault.jpg"><div class="title">Ronald Jenkees - Dr  Goose Robbins</div></div><div class="rel_video " rel="6To9ZzgE4J8"><img src="https://i.ytimg.com/vi/6To9ZzgE4J8/mqdefault.jpg"><div class="title">Ronald Jenkees - Expensive Ice Chill Cuts Deluxe</div></div><div class="rel_video " rel="UWiVA2-Y4cQ"><img src="https://i.ytimg.com/vi/UWiVA2-Y4cQ/mqdefault.jpg"><div class="title">Ronald Jenkees - Rhodes Deep</div></div></div></div><a id="clickme" rel="1869420" class="loading" href="https://www.youtube.com/watch?v=cQk5yw93XPY">Loading</a>		</div>
+	<div class="related"><div class="rel_title" style="display: block;">Related Videos</div><div class="rel_video next_video" rel="ktUCyezuZF0" style="width: 18%;"><img src="https://i.ytimg.com/vi/ktUCyezuZF0/mqdefault.jpg"><div class="title">New Album: Rhodes Deep (Bandcamp Pre-Order)</div></div><div class="rel_video " rel="2m8s18LrJxk" style="width: 18%;"><img src="https://i.ytimg.com/vi/2m8s18LrJxk/mqdefault.jpg"><div class="title">Ronald Jenkees - Try The Bass (Live Jam &amp; New Single for RJCD5)</div></div><div class="rel_video " rel="WGoPPdR_oXc" style="width: 18%;"><img src="https://i.ytimg.com/vi/WGoPPdR_oXc/mqdefault.jpg"><div class="title">Ronald Jenkees - Dr  Goose Robbins</div></div><div class="rel_video " rel="6To9ZzgE4J8" style="width: 18%;"><img src="https://i.ytimg.com/vi/6To9ZzgE4J8/mqdefault.jpg"><div class="title">Ronald Jenkees - Expensive Ice Chill Cuts Deluxe</div></div><div class="rel_video " rel="UWiVA2-Y4cQ" style="width: 18%;"><img src="https://i.ytimg.com/vi/UWiVA2-Y4cQ/mqdefault.jpg"><div class="title">Ronald Jenkees - Rhodes Deep</div></div></div></div><a id="clickme" rel="1869420" class="loading" href="https://www.youtube.com/watch?v=cQk5yw93XPY">Loading</a>		</div>
 	</div>
 
 		</div>
 					<footer>	
 			<div class="inner">
-												<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com --><div id="om-juteep5gasrjxony-holder"></div><script>var juteep5gasrjxony,juteep5gasrjxony_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){juteep5gasrjxony_poll(function(){if(window['om_loaded']){if(!juteep5gasrjxony){juteep5gasrjxony=new OptinMonsterApp();return juteep5gasrjxony.init({u:"927.272948",staging:0,dev:0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optnmnstr.com/app/js/api.min.js",o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;juteep5gasrjxony=new OptinMonsterApp();juteep5gasrjxony.init({u:"927.272948",staging:0,dev:0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->	    <script type="text/javascript">var juteep5gasrjxony_shortcode = true;</script>
-	    <script type='text/javascript'>
-/* <![CDATA[ */
-var click_object = {"ajax_url":"http:\/\/yt2fb.com\/wp-admin\/admin-ajax.php"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://19rra12pc32y3gvmfh3apf04.wpengine.netdna-cdn.com/wp-content/plugins/adrotate/library/jquery.adrotate.clicktracker.js'></script>
-<script type='text/javascript' src='http://19rra12pc32y3gvmfh3apf04.wpengine.netdna-cdn.com/wp-content/plugins/google-adsense-adblock-tracker/block-checker.js?ver=1.0'></script>
-<script type='text/javascript' src='http://19rra12pc32y3gvmfh3apf04.wpengine.netdna-cdn.com/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
-	    <script type="text/javascript">var omapi_localized = { ajax: 'http://yt2fb.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '2fa6f741ab' };</script>
+												<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com --><div id="om-juteep5gasrjxony-holder"></div><!-- / OptinMonster -->	    
+	    
+
+
+
+	    
 	    			</div>
 		</footer>
-	<script type="text/javascript" style='display:none;'>
-var __ez_dims = (function() {
-	var setCookie = function( name, content, expiry ) {
-		return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'');
-	};
-	var ffid = 1;
-	var oh = window.screen.height;
-	var ow = window.screen.width;
-	var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
-	var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
-	var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-	var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-	setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
-	setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
-})();
-</script><script type='text/javascript' src='//yt2fb.com/detroitchicago/edmonton.webp?a=a&cb=156-0&shcb=10' style='display:none;' async></script>
-<script type='text/javascript' src='//yt2fb.com/porpoiseant/jellyfish.webp?a=a&cb=156-0&shcb=10' style='display:none;' async></script>
+	
 
-<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
-<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.yt2fb_com,DomainId.40068"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.yt2fb_com,DomainId.40068"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag--></body>
-</html>
+
+<!--Begin comScore Tag--><noscript>&lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=20015427&amp;cv=2.0&amp;cj=1"/&gt;</noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><noscript>&lt;div style="display:none;"&gt;&lt;img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.yt2fb_com,DomainId.40068"border="0"height="1"width="1"alt="Quantcast"/&gt;&lt;/div&gt;</noscript><!--End Quantcast tag-->
+
+<div id="scrollrail-vertical" class="" style="width: 1.85625px; border-left-width: 0.154688px;"><div id="scrollbar-vertical" style="visibility: hidden; border-radius: 0.773438px 1.08281px; box-shadow: rgba(255, 255, 255, 0.901961) 0px 0px 0.154688px 0.154688px; height: 867.067px; top: 0.309375px; opacity: 0;"></div></div><div id="scrollrail-horizontal" class="disabled" style="height: 1.85625px; border-top-width: 0.154688px;"><div id="scrollbar-horizontal" style="visibility: hidden; border-radius: 2.16562px 1.54688px; box-shadow: rgba(255, 255, 255, 0.901961) 0px 0px 0.154688px 0.154688px; width: 295.453px; left: 0.309375px; opacity: 0;"></div></div></body><div></div></html>
