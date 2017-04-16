@@ -1,0 +1,1 @@
+module.exports = delay => val => new Promise(s => setTimeout(() => s(val), delay))

@@ -1,26 +1,25 @@
 // adapted from https://gist.github.com/Nijikokun/5192472
 
 const map = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
-window.b64 = module.exports = str => {
+module.exports = str => {
   const buf = []
-  let a, b, c, d, e, f, g
+  let code, a, b, c, d, e, f, g
   let output = ''
   let i = -1
-  let charCode
 
   str = str.replace(/\r\n/g, '\n')
 
   while (++i < str.length) {
-    charCode = str.charCodeAt(i)
-    if (charCode < 128) {
-      buf.push(charCode)
-    } else if ((charCode > 127) && (charCode < 2048)) {
-      buf.push((charCode >> 6) | 192)
-      buf.push((charCode & 63) | 128)
+    code = str.charCodeAt(i)
+    if (code < 128) {
+      buf.push(code)
+    } else if ((code > 127) && (code < 2048)) {
+      buf.push((code >> 6) | 192)
+      buf.push((code & 63) | 128)
     } else {
-      buf.push((charCode >> 12) | 224)
-      buf.push(((charCode >> 6) & 63) | 128)
-      buf.push((charCode & 63) | 128)
+      buf.push((code >> 12) | 224)
+      buf.push(((code >> 6) & 63) | 128)
+      buf.push((code & 63) | 128)
     }
   }
 
